@@ -1,3 +1,5 @@
+import path from "path"
+
 module.exports = {
   siteMetadata: {
     title: `Carlos`,
@@ -16,14 +18,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.resolve(__dirname, "src", "images"),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/content/posts/`,
+        path: path.resolve(__dirname, "content", "posts"),
       },
     },
     {
@@ -35,7 +37,7 @@ module.exports = {
         background_color: `#099`,
         theme_color: `#099`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: path.resolve(__dirname, "src", "images", "icon.png"), // This path is relative to the root of the site.
       },
     },
     {
@@ -59,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${__dirname}/src/pages`,
+        path: path.resolve(__dirname, "src", "pages"),
         ignore: [`**/styles.(js)?(x)`],
       },
     },

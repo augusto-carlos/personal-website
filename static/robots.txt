@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://augustocarlos.netlify.com/sitemap.xml
+Sitemap: http://augustocarlos.tk/sitemap.xml
