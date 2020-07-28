@@ -17,7 +17,6 @@ export const MyImage = styled.div`
     padding: 5px;
     border: 2px dashed #099;
     border-radius: 50%;
-    width: 270px;
     transition: 0.3s;
     cursor: pointer;
   }

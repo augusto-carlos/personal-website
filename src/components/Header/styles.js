@@ -5,13 +5,13 @@ import styled, { createGlobalStyle } from "styled-components"
 export const Global = createGlobalStyle`
   body {
   transition: background-color .2s;
-  background-color: ${({ theme }) => (theme === "light" ? "#fff" : "#444")};
-  color: ${({ theme }) => (theme === "light" ? "#444" : "#eee")};
+  background-color: ${({ theme }) => (theme === "light" ? "#fff" : "#131217")};
+  color: ${({ theme }) => (theme === "light" ? "#444" : "#999")};
   font-family: "Muli", sans-serif;
   }  
   
   a {
-  color: ${({ theme }) => (theme === "light" ? "#444" : "#eee")};
+  color: ${({ theme }) => (theme === "light" ? "#444" : "#099")};
   }
 `
 

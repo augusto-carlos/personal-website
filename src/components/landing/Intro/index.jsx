@@ -1,25 +1,31 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import { Wrapper, MyImage } from "./styles"
-import Image from "../../../images/developer.jpg"
 
 export default function Home() {
-  const { ImageDev } = useStaticQuery(graphql`
+  const { me } = useStaticQuery(graphql`
     query {
-      Image: file(relativePath: { eq: "developer.jpg" }) {
+      me: file(relativePath: { eq: "me.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 270, maxHeight: 600) {
-            ...GatsbyImageSharpFluid_tracedSVG
+          fixed(width: 270, height: 270) {
+            ...GatsbyImageSharpFixed_tracedSVG
           }
         }
       }
     }
   `)
+
   return (
     <Wrapper>
       <MyImage>
-        <ImageDev alt="augusto carlos" />
+        <Img
+          fixed={me.childImageSharp.fixed}
+          alt="augusto carlos"
+          style={{ overflow: "inherit" }}
+        />
       </MyImage>
+
       <h2>Hi, i'm Carlos.</h2>
       <p>
         An <b>web developer</b> who is always learning around there! Writing
