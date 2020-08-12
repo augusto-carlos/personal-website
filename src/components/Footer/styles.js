@@ -18,10 +18,10 @@ export const SocialIcons = styled.div`
 
   a {
     padding: 10px;
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   a:hover {
-    filter: brightness(10%);
+    filter: brightness(01%);
   }
 `

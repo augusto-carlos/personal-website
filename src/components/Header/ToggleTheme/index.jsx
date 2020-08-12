@@ -1,16 +1,18 @@
 import React, { useContext } from "react"
-// import { ThemeContext } from "../../../providers/ThemeProvider"
+import { ThemeContext } from "../../../providers/ThemeProvider"
 import { Wrapper } from "./styles"
-import sunIcon from "../../../assets/icons/sun.svg"
-import moonIcon from "../../../assets/icons/moon.svg"
+import sunIcon from "../../../assets/sun.svg"
+import moonIcon from "../../../assets/moon.svg"
 
-// shouldnt get theme, toogleTheme as props
-const ToggleTheme = ({ toggleTheme, theme }) => {
-  // const { theme, toggleTheme } = useContext(ThemeContext)
+const ToggleTheme = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
     <Wrapper type="button" onClick={toggleTheme}>
-      <img src={theme === "light" ? moonIcon : sunIcon} alt={theme} />
+      <img
+        src={theme.name === "light" ? moonIcon : sunIcon}
+        alt="toogle theme"
+      />
     </Wrapper>
   )
 }

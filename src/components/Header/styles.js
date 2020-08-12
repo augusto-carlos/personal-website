@@ -1,28 +1,13 @@
-// createGlobalStyle shouldnt be here
-import styled, { createGlobalStyle } from "styled-components"
-
-// shouldnt be here
-export const Global = createGlobalStyle`
-  body {
-  transition: background-color .2s;
-  background-color: ${({ theme }) => (theme === "light" ? "#fff" : "#131217")};
-  color: ${({ theme }) => (theme === "light" ? "#444" : "#999")};
-  font-family: "Muli", sans-serif;
-  }  
-  
-  a {
-  color: ${({ theme }) => (theme === "light" ? "#444" : "#099")};
-  }
-`
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 40px;
+  padding: 0 20px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 570px) {
     justify-content: center;
     flex-direction: column;
     border-bottom: none;
@@ -30,29 +15,31 @@ export const Wrapper = styled.div`
 `
 
 export const Logo = styled.span`
+  margin: 20px 0;
   a {
     font-size: 28px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     text-decoration: none;
+    color: #099;
   }
 `
 
 export const Menu = styled.ul`
+  padding: 0px;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   align-items: "center";
+  padding: 10px 0;
 
   li {
-    margin: 2px 8px;
+    margin: 0 6px;
+  }
 
-    a {
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+  a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
   }
 `

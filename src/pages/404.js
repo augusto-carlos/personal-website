@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
 const NotFound = () => {
@@ -12,10 +11,10 @@ const NotFound = () => {
     backgroundColor: "rgba(0,0,0,.05)",
   }
   return (
-    <Layout>
+    <>
       <SEO title="404 Error" />
       <h4 style={waringStyles}>Página não encontrada</h4>
-    </Layout>
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { GrGithub, GrLinkedin } from "react-icons/gr"
+import { GrGithub, GrLinkedin, GrTwitter } from "react-icons/gr"
 import { SocialIcons, Wrapper } from "./styles"
 import { Container } from "../Container"
 
@@ -13,14 +13,21 @@ function Footer() {
             href="https://www.linkedin.com/in/augusto-carlos96/"
             rel="noopener noreferrer"
           >
-            <GrLinkedin size={30} />
+            <GrLinkedin size={20} />
+          </a>
+          <a
+            target="_blank"
+            href="https://twitter.com/augusto_4real"
+            rel="noopener noreferrer"
+          >
+            <GrTwitter size={20} />
           </a>
           <a
             target="_blank"
             href="https://github.com/augusto-carlos"
             rel="noopener noreferrer"
           >
-            <GrGithub size={30} />
+            <GrGithub size={20} />
           </a>
         </SocialIcons>
         © {new Date().getFullYear()}, Built with 💖 by{" "}

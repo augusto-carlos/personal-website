@@ -1,13 +1,16 @@
 import React from "react"
-import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Intro from "../components/landing/Intro"
+import Portfolio from "../components/landing/Portfolio"
+import About from "../components/landing/About"
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
       <Intro />
-    </Layout>
+      <About />
+      <Portfolio />
+    </>
   )
 }
