@@ -8,13 +8,13 @@ export default ({ children }) => {
   const { light, dark } = themes
 
   const storagedTheme =
-    localStorage.getItem("1sfrr23_theme") === "dark" ? dark : light
+    window.localStorage.getItem("1sfrr23_theme") === "dark" ? dark : light
 
   const [theme, setTheme] = useState(storagedTheme)
 
   function toggleTheme() {
     setTheme(theme.name === "light" ? dark : light)
-    localStorage.setItem(
+    window.localStorage.setItem(
       "1sfrr23_theme",
       theme.name === "light" ? "dark" : "light"
     )
