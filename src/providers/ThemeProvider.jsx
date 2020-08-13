@@ -6,19 +6,26 @@ export const ThemeContext = createContext(themes.light)
 export default ({ children }) => {
   //Must reorgnize it
   const { light, dark } = themes
-
-  const storagedTheme =
-    localStorage.getItem("1sfrr23_theme") === "dark" ? dark : light
-
-  const [theme, setTheme] = useState(storagedTheme)
+  const [theme, setTheme] = useState(light)
 
   function toggleTheme() {
     setTheme(theme.name === "light" ? dark : light)
-    localStorage.setItem(
-      "1sfrr23_theme",
-      theme.name === "light" ? "dark" : "light"
-    )
   }
+
+  // if (typeof window !== `undefined`) {
+  //   const storagedTheme =
+  //     localStorage.getItem("1sfrr23_theme") === "dark" ? dark : light
+
+  //   setTheme(storagedTheme)
+
+  //   function toggleTheme() {
+  //     setTheme(theme.name === "light" ? dark : light)
+  //     localStorage.setItem(
+  //       "1sfrr23_theme",
+  //       theme.name === "light" ? "dark" : "light"
+  //     )
+  //   }
+  // }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
