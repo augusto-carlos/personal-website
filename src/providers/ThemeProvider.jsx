@@ -6,10 +6,13 @@ export const ThemeContext = createContext(themes.light)
 export default ({ children }) => {
   //Must reorgnize it
   const { light, dark } = themes
-  const [theme, setTheme] = useState(light)
 
   function toggleTheme() {
     setTheme(theme.name === "light" ? dark : light)
+    localStorage.setItem(
+      "1sfrr23_theme",
+      theme.name === "light" ? "dark" : "light"
+    )
   }
 
   // if (typeof window !== `undefined`) {
