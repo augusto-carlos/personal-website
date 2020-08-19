@@ -1,19 +1,21 @@
 import React from "react"
-import { FiInstagram, FiTwitter } from "react-icons/fi"
+import { FiInstagram } from "react-icons/fi"
 import { Container } from "../../Container"
-import { Wrapper, Bio, Image } from "./styles"
-import MyImage from "../../../assets/me-about.png"
+import { Wrapper, Bio } from "./styles"
 
 export default function About() {
   return (
     <>
       <Wrapper id="about" as={Container}>
         <Bio>
-          <h2>About me</h2>
+          <h3>About me</h3>
+          <h4>
+            Full<b>stack</b> developer
+          </h4>
           <p>
-            My name is Augusto Carlos Pereira da Silva, I'm a web developer ,
-            computer science student and a technology enthusiast around the
-            programming universe with a focus on the web.
+            Hello, my name is Augusto Carlos Pereira da Silva, I'm a software
+            developer , computer science student and a technology enthusiast
+            around the programming universe with a focus on the web.
           </p>
           <p>
             My current choice of tools and languages is trending toward
@@ -32,17 +34,7 @@ export default function About() {
           >
             <FiInstagram size={24} />
           </a>
-          <a
-            target="_blank"
-            href="https://twitter.com/augusto_4real"
-            rel="noopener noreferrer"
-          >
-            <FiTwitter size={24} />
-          </a>
         </Bio>
-        <Image>
-          <img src={MyImage} alt="carlos" />
-        </Image>
       </Wrapper>
     </>
   )

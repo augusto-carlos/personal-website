@@ -8,10 +8,10 @@ export const GlobalStyles = createGlobalStyle`
  
   body {
   transition: background-color .2s;
-  background: ${({ theme }) => theme.background} ;
+  background: var(--primary);
   background-repeat: no-repeat;
   background-size: 100%;
-  color:  ${({ theme }) => theme.color} ;
+  color:  var(--secondary);
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -22,11 +22,25 @@ export const GlobalStyles = createGlobalStyle`
 }
   
   a, button {
-  color: ${({ theme }) => theme.color} ;
+  color: var(--color);
   }
   
   .start-wave {
     position: relative;
     bottom: -10px;
+  }
+  
+  body.dark{
+    --primary: #191921;
+    --secondary: #e5e3e3;
+    --borderAside: #c74c31;
+    --constrast:  #202028;
+  }
+  
+  body.light{
+    --primary: #f5f5f5;
+    --secondary: #444;
+    --borderAside: #b9b9b9;
+    --constrast:  #dfdfdf;
   }
 `

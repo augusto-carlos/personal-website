@@ -1,13 +1,12 @@
 import PropTypes from "prop-types"
-import { ThemeContext } from "../providers/ThemeProvider"
-import React, { useContext, useEffect } from "react"
+import React, { useEffect } from "react"
 import goTo from "gatsby-plugin-smoothscroll"
-import Footer from "./Footer"
-import Header from "./Header"
-import { GlobalStyles } from "../styles/GlobalStyles"
+import Nav from "../Nav"
+import Bar from "../Bar"
+import { GlobalStyles } from "../../styles/global"
+import { Content } from "./styles.js"
 
 const Layout = ({ children }) => {
-  const { theme } = useContext(ThemeContext)
   useEffect(() => {
     const internalLinks = document.querySelectorAll(
       "a.internal, .menu-header a[href^='/#']"
@@ -20,12 +19,13 @@ const Layout = ({ children }) => {
       goTo(section.slice(1))
     }
   }, [])
+
   return (
     <>
-      <GlobalStyles theme={theme} />
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <GlobalStyles />
+      <Nav />
+      <Content>{children}</Content>
+      <Bar />
     </>
   )
 }

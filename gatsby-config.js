@@ -28,8 +28,8 @@ module.exports = {
         name: `Augusto Carlos`,
         short_name: `carlos`,
         start_url: `/`,
-        background_color: `#b98000`,
-        theme_color: `#b98000`,
+        background_color: `#c74c31`,
+        theme_color: `#c74c31`,
         display: `minimal-ui`,
         icon: path.resolve(__dirname, "src", "images", "icon.png"), // This path is relative to the root of the site.
       },
@@ -64,7 +64,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#099`,
+        color: `#c74c31`,
         // Disable the loading spinner.
         showSpinner: false,
       },

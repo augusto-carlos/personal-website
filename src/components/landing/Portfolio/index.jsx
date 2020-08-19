@@ -31,22 +31,18 @@ export default function Portfolio() {
               </Phone>
               <div className="desc">
                 <h3>Mobile Apps</h3>
-                <p>
-                  Creating beautiful apps for both platforms with the same
-                  technology(Flutter).
-                </p>
-                <button>See projects</button>
+                <p>Some of my apps developed using Flutter and React Native.</p>
+                <button>All projects</button>
               </div>
             </section>
             <section>
               <div className="desc">
-                <h3>Websites & Desktop apps</h3>
+                <h3>Websites</h3>
                 <p>
-                  Creating websites with Javascript ecossistem tools(React,
-                  GatsbyJS, ExpressJS, AdonisJS...), and using ElectronJS to
-                  build desktop apps.
+                  Websites that i've made using NextJS, GatsbyJS, ReactJS and
+                  other frontend technologies.
                 </p>
-                <button>See projects</button>
+                <button>All projects</button>
               </div>
               <Desktop>
                 <div className="display">
@@ -61,7 +57,7 @@ export default function Portfolio() {
                       <div>
                         <GoBrowser size={60} color="#666" />
                       </div>
-                      <p>Websites | Desktop apps</p>
+                      <p>Websites</p>
                     </div>
                     <i></i>
                   </div>

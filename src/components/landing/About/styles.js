@@ -3,16 +3,17 @@ import styled from "styled-components"
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 60px 0;
+  min-height: 100vh;
 `
 
 export const Bio = styled.div`
-  max-width: 500px;
-  h2 {
+  max-width: 700px;
+  h3 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     margin: 25px 0;
     color: #aaa;
   }
@@ -22,14 +23,5 @@ export const Bio = styled.div`
 
   svg {
     margin: 10px;
-  }
-`
-export const Image = styled.div`
-  border: 2px dashed #099;
-  img {
-    position: relative;
-    left: 20px;
-    top: 20px;
-    width: 250px;
   }
 `

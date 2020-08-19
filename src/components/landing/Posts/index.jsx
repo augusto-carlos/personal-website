@@ -1,11 +1,15 @@
 import React from "react"
+import Container from "../../Container"
 import { Wrapper } from "./styles"
-import { Container } from "../../Container"
 
-export default function Intro() {
+function Posts() {
   return (
-    <Wrapper as={Container}>
-      <p className="warning">No articles 🚶</p>
-    </Wrapper>
+    <>
+      <Wrapper as={Container}>
+        <p className="warning">No articles 🚶</p>
+      </Wrapper>
+    </>
   )
 }
+
+export default Posts

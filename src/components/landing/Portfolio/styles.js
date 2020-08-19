@@ -2,12 +2,9 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   padding: 50px 0;
-  background: #eee;
-  color: #333;
 
   & > div h2 {
     text-align: center;
-    color: #ddd;
     font-family: "Ubuntu", sans-serif;
     font-size: 30px;
   }
@@ -19,7 +16,7 @@ export const ProjectContainer = styled.div`
   flex-wrap: wrap;
 
   & > section {
-    min-width: 900px;
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -28,18 +25,18 @@ export const ProjectContainer = styled.div`
 
     h3 {
       font-family: "Ubuntu", sans-serif;
-      font-size: 30px;
+      font-size: 35px;
       margin: 18px 0;
-      color: #099;
+      color: #aaa;
     }
 
     .desc {
-      max-width: 400px;
+      max-width: 300px;
       padding: 30px;
 
       button {
-        border: 1px solid #099;
-        background: #099;
+        border: 1px solid #666;
+        background: #666;
         color: #fff;
         padding: 10px 20px;
         margin: 20px 24px 0px 0px;
@@ -100,8 +97,7 @@ export const Phone = styled.div`
     border-bottom-right-radius: 26px;
     background: #4a4758;
     border-bottom-left-radius: 26px;
-    position: relative;
-    top: -1px;
+    margin-top: -1px;
   }
 `
 
@@ -138,5 +134,9 @@ export const Desktop = styled.div`
     box-shadow: 6px 10px 11px 2px #0000002e;
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
+  }
+
+  @media (max-width: 1120px) {
+    display: none;
   }
 `
