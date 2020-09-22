@@ -25,11 +25,6 @@ export const GlobalStyles = createGlobalStyle`
   color: var(--color);
   }
   
-  .start-wave {
-    position: relative;
-    bottom: -10px;
-  }
-  
   body.dark{
     --primary: #191921;
     --secondary: #e5e3e3;

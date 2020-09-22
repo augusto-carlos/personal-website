@@ -21,7 +21,6 @@ export const ProjectContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 60px 0;
 
     h3 {
       font-family: "Ubuntu", sans-serif;

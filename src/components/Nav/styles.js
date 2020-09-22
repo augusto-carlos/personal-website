@@ -42,7 +42,6 @@ export const Name = styled.span`
 `
 
 export const Menu = styled.ul`
-  padding: 0px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -87,6 +86,7 @@ export const Social = styled.div`
     filter: brightness(01%);
   }
 `
+
 export const MobileHeader = styled.header`
   text-align: center;
   min-height: 4rem;
@@ -100,5 +100,8 @@ export const MobileHeader = styled.header`
 
   @media (max-width: 1120px) {
     display: block;
+  }
+  li a {
+    font-size: 14px;
   }
 `

@@ -23,9 +23,9 @@ const ToggleTheme = () => {
       title="Mudar o tema"
     >
       {isDarkMode ? (
-        <img src={sunIcon} alt="toogle theme" />
+        <img src={sunIcon} alt="mudar o tema" />
       ) : (
-        <img src={moonIcon} alt="toogle theme" />
+        <img src={moonIcon} alt="mudar o tema" />
       )}
     </Wrapper>
   )
