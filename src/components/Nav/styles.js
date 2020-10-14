@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   text-align: center;
   background: var(--constrast);
   justify-content: space-between;
-  border-right: 1px solid var(--borderAside);
+  border-right: 1px solid var(--main);
 
   @media (max-width: 1120px) {
     display: none;
@@ -92,7 +92,7 @@ export const MobileHeader = styled.header`
   min-height: 4rem;
   width: 100%;
   background: var(--constrast);
-  border-bottom: 1px solid var(--borderAside);
+  border-bottom: 1px solid var(--main);
   position: fixed;
   display: none;
   overflow: hidden;

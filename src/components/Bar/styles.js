@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  border-left: 1px solid var(--borderAside);
+  border-left: 1px solid var(--main);
   background: var(--constrast);
   width: 3.75rem;
   height: 100vh;
@@ -23,6 +23,6 @@ export const Wrapper = styled.div`
     left: 0;
     flex-direction: row;
     border-left: none;
-    border-top: 1px solid var(--borderAside);
+    border-top: 1px solid var(--main);
   }
 `

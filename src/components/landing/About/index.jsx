@@ -9,23 +9,22 @@ export default function About() {
       <Wrapper id="about" as={Container}>
         <Bio>
           <h3>About me</h3>
-          <h4>
-            Full<b>stack</b> developer
-          </h4>
+          <h4>Full stack developer</h4>
           <p>
-            Hello, my name is Augusto Carlos Pereira da Silva, I'm a software
+            Hello, my name is Augusto Carlos Pereira da Silva, I'm a web
             developer , computer science student and a technology enthusiast
             around the programming universe with a focus on the web.
           </p>
           <p>
             My current choice of tools and languages is trending toward
-            Typescript(Node/ReactJS), Go and Flutter. My fields of interest and
-            domain knowledge span networking, infrastructure and security.
+            Typescript(Node/Angular), ReactJS, and Flutter. My fields of
+            interest and domain knowledge span Web services, SEO and UI/UX
+            Design.
           </p>
           <p>
-            Innovation and creativity are what drive me while i'm writting
-            apps⚡. In addition to programming, I really like books and music,
-            and sometimes drawing to pass the time.
+            Security, innovation and creativity are what drive me while i'm
+            writting apps⚡. In addition to programming, I really like books and
+            music, and sometimes drawing to pass the time.
           </p>
           <a
             target="_blank"

@@ -28,14 +28,14 @@ export const GlobalStyles = createGlobalStyle`
   body.dark{
     --primary: #191921;
     --secondary: #e5e3e3;
-    --borderAside: #c74c31;
+    --main: #c74c31;
     --constrast:  #202028;
   }
   
   body.light{
     --primary: #f5f5f5;
     --secondary: #444;
-    --borderAside: #b9b9b9;
+    --main: #aaa;
     --constrast:  #dfdfdf;
   }
 `

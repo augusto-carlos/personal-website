@@ -32,7 +32,13 @@ export default function Portfolio() {
               <div className="desc">
                 <h3>Mobile Apps</h3>
                 <p>Some of my apps developed using Flutter and React Native.</p>
-                <button>All projects</button>
+                <a
+                  target="_blank"
+                  href="https://github.com/augusto-carlos/"
+                  rel="noopener noreferrer"
+                >
+                  All projects
+                </a>
               </div>
             </section>
             <section>
@@ -42,7 +48,13 @@ export default function Portfolio() {
                   Websites that i've made using NextJS, GatsbyJS, ReactJS and
                   other frontend technologies.
                 </p>
-                <button>All projects</button>
+                <a
+                  target="_blank"
+                  href="https://github.com/augusto-carlos/"
+                  rel="noopener noreferrer"
+                >
+                  All projects
+                </a>
               </div>
               <Desktop>
                 <div className="display">

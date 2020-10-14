@@ -2,10 +2,15 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Carlos`,
+    title: `Augusto Carlos`,
     description: `A web developer who is always evolving out there! Writing applications with Typescript, React.js and Flutter.`,
-    author: `@augusto_4real`,
     url: `http://augustocarlos.tk`,
+    author: `@augusto_4real`,
+    social: {
+      linkedIn: `https://www.linkedin.com/in/augusto-carlos96/`,
+      github: `https://github.com/augusto-carlos/`,
+      twitter: `https://twitter.com/augusto_4real/`,
+    },
   },
   plugins: [
     "gatsby-plugin-react-helmet", // plugin para setar o head do documento HTML

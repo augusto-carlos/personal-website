@@ -17,10 +17,16 @@ export const ProjectContainer = styled.div`
 
   & > section {
     max-width: 900px;
+    min-width: 62vw;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center;
+
+    & + section {
+      flex-wrap: wrap;
+      margin-top: 100px;
+    }
 
     h3 {
       font-family: "Ubuntu", sans-serif;
@@ -33,11 +39,14 @@ export const ProjectContainer = styled.div`
       max-width: 300px;
       padding: 30px;
 
-      button {
-        border: 1px solid #666;
-        background: #666;
+      a {
+        display: inline-block;
+        background: var(--main);
+
+        font-weight: bold;
+        text-decoration: none;
         color: #fff;
-        padding: 10px 20px;
+        padding: 8px 20px;
         margin: 20px 24px 0px 0px;
       }
     }
@@ -63,9 +72,13 @@ export const ProjectContainer = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
-    background: #eee;
     border-radius: 20px;
-    color: #666;
+    color: #999;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  svg {
+    fill: #999;
   }
 
   .screen-content {
@@ -105,7 +118,7 @@ export const Desktop = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 510px;
+  min-width: 440px;
   height: 316px;
   margin: 20px;
   cursor: pointer;
@@ -133,9 +146,5 @@ export const Desktop = styled.div`
     box-shadow: 6px 10px 11px 2px #0000002e;
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
-  }
-
-  @media (max-width: 1120px) {
-    display: none;
   }
 `
