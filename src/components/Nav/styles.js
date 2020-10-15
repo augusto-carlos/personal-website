@@ -100,6 +100,7 @@ export const MobileHeader = styled.header`
 
   @media (max-width: 1120px) {
     display: block;
+    z-index: 2;
   }
   li a {
     font-size: 14px;
