@@ -11,7 +11,7 @@ export default function About() {
           <h3>About me</h3>
           <h4>Full stack developer</h4>
           <p>
-            Hello, my name is Augusto Carlos Pereira da Silva, I'm a web
+            Hello, my name is Augusto da Silva, I'm a web
             developer , computer science student and a technology enthusiast
             around the programming universe with a focus on the web.
           </p>
