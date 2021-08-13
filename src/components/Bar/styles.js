@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  border-left: 1px solid var(--main);
   background: var(--constrast);
   width: 3.75rem;
   height: 100vh;
@@ -14,6 +13,8 @@ export const Wrapper = styled.div`
   align-items: center;
   padding: 0.8rem 0px;
   transition: background 0.5s ease 0s;
+  box-shadow: -9px 0px 12px 0px rgb(199 199 199 / 8%);
+  border-left: 1px solid #e4e3e3;
 
   @media (max-width: 1120px) {
     width: 100%;
@@ -23,6 +24,7 @@ export const Wrapper = styled.div`
     left: 0;
     flex-direction: row;
     border-left: none;
-    border-top: 1px solid var(--main);
+    box-shadow: 0px -9px 12px 0px rgb(199 199 199 / 8%);
+    border-top: 1px solid #e4e3e3;
   }
 `

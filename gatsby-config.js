@@ -2,14 +2,14 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Augusto Carlos`,
+    title: `Augusto da Silva`,
     description: `A web developer who is always evolving out there! Writing applications with Typescript, React.js and Flutter.`,
     url: `http://augustocarlos.tk`,
-    author: `@augusto_4real`,
+    author: `@carllos_04`,
     social: {
       linkedIn: `https://www.linkedin.com/in/augusto-carlos96/`,
       github: `https://github.com/augusto-carlos/`,
-      twitter: `https://twitter.com/augusto_4real/`,
+      twitter: `https://twitter.com/carllos_04/`,
     },
   },
   plugins: [
@@ -30,32 +30,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Augusto Carlos`,
+        name: `Augusto da Silva`,
         short_name: `carlos`,
         start_url: `/`,
-        background_color: `#c74c31`,
-        theme_color: `#c74c31`,
+        background_color: `#529CCE`,
+        theme_color: `#529CCE`,
         display: `minimal-ui`,
         icon: path.resolve(__dirname, "src", "images", "icon.png"), // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: "Open Sans",
-            variants: ["300", "300i", "700", "700i"],
-
-            subsets: ["latin-ext"],
-          },
-          {
-            family: "Ubuntu",
-            variants: ["300", "300i", "700", "700i"],
-            subsets: ["latin-ext"],
-          },
-        ],
-        display: "swap",
       },
     },
     {
@@ -69,7 +50,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#c74c31`,
+        color: `#529CCE`,
         // Disable the loading spinner.
         showSpinner: false,
       },

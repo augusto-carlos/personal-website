@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 
   & > div h2 {
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 30px;
   }
 `
@@ -29,7 +29,7 @@ export const ProjectContainer = styled.div`
     }
 
     h3 {
-      font-family: "Ubuntu", sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 35px;
       margin: 18px 0;
       color: #aaa;

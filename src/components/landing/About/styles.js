@@ -10,9 +10,16 @@ export const Wrapper = styled.div`
 `
 
 export const Bio = styled.div`
+  .badge {
+    padding: 2px 8px;
+    display: inline-block;
+    background: #42ad8021;
+    border-radius: 4px;  
+  }
+
   max-width: 700px;
   h3 {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 40px;
     margin: 25px 0;
     color: #aaa;
@@ -23,5 +30,6 @@ export const Bio = styled.div`
 
   svg {
     margin: 10px;
+    color: var(--main)
   }
 `

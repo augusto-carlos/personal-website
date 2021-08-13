@@ -12,7 +12,8 @@ export const Wrapper = styled.div`
   text-align: center;
   background: var(--constrast);
   justify-content: space-between;
-  border-right: 1px solid var(--main);
+  border-right: 1px solid #e4e3e3;
+   box-shadow: 13px 0px 12px 0px rgb(199 199 199 / 8%);
 
   @media (max-width: 1120px) {
     display: none;
@@ -34,10 +35,10 @@ export const Name = styled.span`
   margin: 20px 0;
   a {
     font-size: 28px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     text-decoration: none;
-    color: #c74c31;
+    color: var(--main);
   }
 `
 
@@ -83,7 +84,7 @@ export const Social = styled.div`
   }
 
   a:hover {
-    filter: brightness(01%);
+    filter: brightness(0.6);
   }
 `
 
@@ -92,7 +93,8 @@ export const MobileHeader = styled.header`
   min-height: 4rem;
   width: 100%;
   background: var(--constrast);
-  border-bottom: 1px solid var(--main);
+  box-shadow: 0px 14px 12px 0px rgb(199 199 199 / 8%);
+   border-bottom: 1px solid #e4e3e3;
   position: fixed;
   display: none;
   overflow: hidden;
