@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 const Nav = () => {
   const { me } = useStaticQuery(graphql`
     query {
-      me: file(relativePath: { eq: "avatar.jpg" }) {
+      me: file(relativePath: { eq: "me.jpg" }) {
         childImageSharp {
           fixed(width: 150, height: 150) {
             ...GatsbyImageSharpFixed_tracedSVG
@@ -22,7 +22,7 @@ const Nav = () => {
     <>
       <MobileHeader>
         <Name>
-          <Link to="/">Augusto Carlos</Link>
+          <Link to="/">Augusto da Silva</Link>
         </Name>
         <Menu className="menu-header">
           <li>
@@ -44,12 +44,12 @@ const Nav = () => {
           <Avatar>
             <Img
               fixed={me.childImageSharp.fixed}
-              alt="augusto carlos"
+              alt="augusto da silva"
               style={{ overflow: "inherit" }}
             />
           </Avatar>
           <Name>
-            <Link to="/">Augusto Carlos</Link>
+            <Link to="/">Augusto da Silva</Link>
           </Name>
         </header>
 
@@ -78,7 +78,7 @@ const Nav = () => {
           </a>
           <a
             target="_blank"
-            href="https://twitter.com/augusto_4real"
+            href="https://twitter.com/carllos_4real"
             rel="noopener noreferrer"
           >
             <GrTwitter size={20} />
