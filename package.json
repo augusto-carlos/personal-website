@@ -26,7 +26,7 @@
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.23",
-    "gatsby-transformer-remark": "^2.8.27",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.11",
     "kill-port": "^1.6.1",
     "prop-types": "^15.7.2",
